@@ -1,0 +1,110 @@
+[
+    {
+        "product_id": 0,
+        "product_name": "Torn Jeans",
+        "product_price": 5500,
+        "product_image": "https://www.freepnglogos.com/uploads/jeans-png/jeans-mens-pants-cliparts-download-clip-art-37.png",
+        "product_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "product_category": "jeans",
+        "product_discount_percentage": 10,
+        "product_soft_deleted": "true",
+        "product_hard_deleted": "false",
+        "product_gender": "men"
+    },
+    {
+        "product_id": 1,
+        "product_name": "Nike T-shirt",
+        "product_price": 4500,
+        "product_image": "https://www.freepnglogos.com/uploads/t-shirt-png/t-shirt-png-printed-shirts-south-africa-20.png",
+        "product_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "product_category": "t-shirt",
+        "product_discount_percentage": 10,
+        "product_soft_deleted": "false",
+        "product_hard_deleted": "false",
+        "product_gender": "men"
+    },
+    {
+        "product_id": 2,
+        "product_name": "Casual Dress Belt",
+        "product_price": 900,
+        "product_image": "https://www.freepnglogos.com/uploads/belts-png/casual-dress-belts-for-men-28.png",
+        "product_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "product_category": "belt",
+        "product_discount_percentage": 5,
+        "product_soft_deleted": "false",
+        "product_hard_deleted": "false",
+        "product_gender": "men"
+    },
+    {
+        "product_id": 3,
+        "product_name": "Footwear For Women",
+        "product_price": 1200,
+        "product_image": "https://www.freepnglogos.com/uploads/women-shoes-png/download-women-shoes-png-image-png-image-pngimg-2.png",
+        "product_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "product_category": "shoes",
+        "product_discount_percentage": 8,
+        "product_soft_deleted": "false",
+        "product_hard_deleted": "false",
+        "product_gender": "women"
+    },
+    {
+        "product_id": 4,
+        "product_name": "Nike Jogging shoes",
+        "product_price": 2000,
+        "product_image": "https://www.freepnglogos.com/uploads/shoes-png/find-your-perfect-running-shoes-26.png",
+        "product_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "product_category": "shoes",
+        "product_discount_percentage": 15,
+        "product_soft_deleted": "false",
+        "product_hard_deleted": "false",
+        "product_gender": "men"
+    },
+    {
+        "product_id": 5,
+        "product_name": "Leather Wallets",
+        "product_price": 700,
+        "product_image": "https://www.freepnglogos.com/uploads/money-png/money-wallet-dollar-image-money-pictures-download-27.png",
+        "product_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "product_category": "wallet",
+        "product_discount_percentage": 5,
+        "product_soft_deleted": "false",
+        "product_hard_deleted": "false",
+        "product_gender": "men"
+    },
+    {
+        "product_id": 6,
+        "product_name": "Uniqlo Jeans innovation",
+        "product_price": 4200,
+        "product_image": "https://www.freepnglogos.com/uploads/jeans-png/uniqlo-jeans-innovation-story-16.png",
+        "product_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "product_category": "jeans",
+        "product_discount_percentage": 10,
+        "product_soft_deleted": "false",
+        "product_hard_deleted": "false",
+        "product_gender": "men"
+    },
+    {
+        "product_id": 7,
+        "product_name": "John Doe Kevlar Jeans",
+        "product_price": 3000,
+        "product_image": "https://www.freepnglogos.com/uploads/jeans-png/jeans-png-images-with-transparent-background-19.png",
+        "product_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "product_category": "jeans",
+        "product_discount_percentage": 30,
+        "product_soft_deleted": "false",
+        "product_hard_deleted": "false",
+        "product_gender": "men"
+    },
+    {
+        "product_id": 8,
+        "product_name": "Converse Shoes",
+        "product_price": 2500,
+        "product_image": "https://www.freepnglogos.com/uploads/shoes-png/shoes-shoe-png-transparent-shoe-images-pluspng-37.png",
+        "product_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "product_category": "shoes",
+        "product_discount_percentage": 10,
+        "product_soft_deleted": "false",
+        "product_hard_deleted": "false",
+        "product_gender": "men"
+    }
+]

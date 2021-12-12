@@ -1,0 +1,70 @@
+<div class="container-fluid">
+    <div id="content">
+        <div id="products">
+            <div class="row mx-0">
+                <div class="col-lg-4 col-md-6 mb-4"
+                    *ngFor="let product of productList | filter: searchFilter | filter: softDeleteFilter | filter: hardDeleteFilter">
+                    <div class="card d-flex flex-column align-items-center"
+                        [routerLink]="['/product-detail', product.product_id]">
+                        <div class="product-name">{{product.product_name}}</div>
+                        <div class="card-img">
+                            <img [src]="product.product_image" [alt]="product.product_name">
+                        </div>
+                        <div class="card-body pt-5">
+                            <div class="text-muted text-center mt-auto">Available Colors</div>
+                            <div class="d-flex align-items-center justify-content-center colors my-2">
+                                <div class="btn-group" data-toggle="buttons" data-tooltip="tooltip"
+                                    data-placement="right" title="choose color"> <label
+                                        class="btn btn-red form-check-label"> <input class="form-check-input"
+                                            type="radio" autocomplete="off"> </label> <label
+                                        class="btn btn-blue form-check-label active">
+                                        <input class="form-check-input" type="radio" autocomplete="off"> </label> <label
+                                        class="btn btn-green form-check-label"> <input class="form-check-input"
+                                            type="radio" autocomplete="off"> </label> <label
+                                        class="btn btn-orange form-check-label"> <input class="form-check-input"
+                                            type="radio" autocomplete="off"> </label> <label
+                                        class="btn btn-pink form-check-label"> <input class="form-check-input"
+                                            type="radio" autocomplete="off"> </label> </div>
+                            </div>
+                            <div class="d-flex align-items-center price" *ngIf="product.product_discount_percentage">
+                                <div class="del mr-2"><span class="text-dark">Rs {{product.product_price}}</span></div>
+                                <div class="font-weight-bold">Rs {{product.product_price - (product.product_price *
+                                    product.product_discount_percentage / 100)}}</div>
+                                <div class="badge badge-pill badge-success ml-1"
+                                    *ngIf="product.product_discount_percentage">
+                                    {{product.product_discount_percentage}}%
+                                    off</div>
+                            </div>
+                            <div class="d-flex align-items-center price" *ngIf="!product.product_discount_percentage">
+                                <div class="font-weight-bold"><span class="text-dark">Rs
+                                        {{product.product_price}}</span></div>
+                            </div>
+                        </div>
+                        <div class="align-self-end" (click)="$event.stopPropagation()">
+                            <button type="button" class="btn btn-outline-secondary btn-rounded btn-icon"
+                                (click)="restoreItem(product)">
+                                <i class="mdi mdi-backup-restore text-primary"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary btn-rounded btn-icon"
+                                (click)="hardDeleteItem(product)">
+                                <i class="mdi mdi-delete-forever text-primary"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="notfound"
+                    *ngIf="!(productList | filter: searchFilter | filter: softDeleteFilter | filter: hardDeleteFilter).length">
+                    <div class="notfound">
+                        <div class="notfound-404">
+                            <h1>404</h1>
+                        </div>
+                        <h2>Oops! Nothing was found</h2>
+                        <p>The product you're looking for might have been removed, had its name changed or is
+                            temporarily
+                            unavailable. <a href="javascript:;" [routerLink]="['/add-product']">Add Product</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

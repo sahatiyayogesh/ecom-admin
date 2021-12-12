@@ -1,0 +1,38 @@
+<div class="page-header">
+    <h3 class="page-title">
+        Product Detail
+    </h3>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:;" [routerLink]="['/dashboard']">Products</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{selectedProduct.product_name}}</li>
+        </ol>
+    </nav>
+</div>
+<div class="product-detail">
+    <nav>
+        <button type="button" class="btn btn-outline-secondary btn-rounded btn-icon" [routerLink]="['/dashboard']">
+            <i class="mdi mdi-keyboard-backspace text-danger"></i>
+        </button>
+        Back to all Products
+    </nav>
+    <div class="d-flex">
+        <div class="photo">
+            <img [src]="selectedProduct.product_image">
+        </div>
+        <div class="description">
+            <h2>{{selectedProduct.product_name}}</h2>
+            <h4>Popular House Plant</h4>
+            <h1><del>Rs {{selectedProduct.product_price}}</del> Rs {{selectedProduct.product_price -
+                (selectedProduct.product_price *
+                selectedProduct.product_discount_percentage / 100)}}
+                <div class="badge badge-pill badge-success ml-1" *ngIf="selectedProduct.product_discount_percentage">
+                    {{selectedProduct.product_discount_percentage}}%
+                    off</div>
+            </h1>
+            <p>{{selectedProduct.product_description}}</p>
+            <button type="button" class="btn btn-outline-danger btn-fw">Add to Cart</button>
+            <button type="button" class="btn btn-outline-danger btn-fw">Wishlist</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,96 @@
+<div class="page-header">
+    <h3 class="page-title">
+        {{isEditMode ? 'Edit' : 'Add'}} Product
+    </h3>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:;" [routerLink]="['/dashboard']">Products</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{isEditMode ? 'Edit' : 'Add'}} Product</li>
+        </ol>
+    </nav>
+</div>
+<div class="row">
+    <div class="col-md-6 add-product-form">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{isEditMode ? 'Edit' : 'Add'}} Product form</h4>
+                <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group" [ngClass]="{ 'is-invalid': submitted && f.product_name.errors }">
+                        <label for="productTitle">Title</label>
+                        <input type="text" class="form-control" id="productTitle" placeholder="Title"
+                            formControlName="product_name">
+                        <div *ngIf="submitted && f.product_name.errors" class="invalid-feedback">
+                            <div *ngIf="f.product_name.errors.required">Title is required</div>
+                            <div *ngIf="f.product_name.errors.maxlength">Title must be of max 50 characters</div>
+                        </div>
+                    </div>
+                    <div class="form-group" [ngClass]="{ 'is-invalid': submitted && f.product_description.errors }">
+                        <label for="productDescription">Description</label>
+                        <textarea class="form-control" id="productDescription" placeholder="Description" rows="5"
+                            formControlName="product_description"></textarea>
+                        <div *ngIf="submitted && f.product_description.errors" class="invalid-feedback">
+                            <div *ngIf="f.product_description.errors.required">Description is required</div>
+                            <div *ngIf="f.product_description.errors.minlength">Description must be of min 150
+                                characters</div>
+                        </div>
+                    </div>
+                    <div class="form-group" [ngClass]="{ 'is-invalid': submitted && f.product_image.errors }">
+                        <label for="productImage">Image URL</label>
+                        <input type="email" class="form-control" id="productImage"
+                            placeholder="https://www.freepnglogos.com/uploads/jeans-png/jeans-mens-pants-cliparts-download-clip-art-37.png"
+                            formControlName="product_image">
+                        <div *ngIf="submitted && f.product_image.errors" class="invalid-feedback">
+                            <div *ngIf="f.product_image.errors.required">Image URL is required</div>
+                            <div *ngIf="f.product_image.errors.pattern">Invalid Image URL</div>
+                        </div>
+                    </div>
+                    <div class="form-group" [ngClass]="{ 'is-invalid': submitted && f.product_price.errors }">
+                        <label for="productPrice">Price (Rs)</label>
+                        <input type="text" class="form-control" id="productPrice" placeholder="Ex. 5000"
+                            formControlName="product_price">
+                        <div *ngIf="submitted && f.product_price.errors" class="invalid-feedback">
+                            <div *ngIf="f.product_price.errors.required">Price is required</div>
+                            <div *ngIf="f.product_price.errors.pattern">Invalid Price</div>
+                        </div>
+                    </div>
+                    <div class="form-group"
+                        [ngClass]="{ 'is-invalid': submitted && f.product_discount_percentage.errors }">
+                        <label for="productDiscount">Discount (%)</label>
+                        <input type="text" class="form-control" id="productDiscount" placeholder="Ex. 10"
+                            formControlName="product_discount_percentage">
+                        <div *ngIf="submitted && f.product_discount_percentage.errors" class="invalid-feedback">
+                            <div *ngIf="f.product_discount_percentage.errors.pattern">Invalid Discount</div>
+                        </div>
+                    </div>
+                    <div class="form-group" [ngClass]="{ 'is-invalid': submitted && f.product_category.errors }">
+                        <label for="productCategory">Category</label>
+                        <select class="form-control" id="productCategory" formControlName="product_category">
+                            <option value="">Select Category</option>
+                            <option value="jeans">Jeans</option>
+                            <option value="t-shirt">T-Shirt</option>
+                            <option value="shoes">Shoes</option>
+                            <option value="belt">Belt</option>
+                            <option value="wallet">Wallet</option>
+                        </select>
+                        <div *ngIf="submitted && f.product_category.errors" class="invalid-feedback">
+                            <div *ngIf="f.product_category.errors.required">Category is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group" [ngClass]="{ 'is-invalid': submitted && f.product_gender.errors }">
+                        <label for="productGender">Gender</label>
+                        <select class="form-control" id="productGender" formControlName="product_gender">
+                            <option value="">Select Gender</option>
+                            <option value="men">Men</option>
+                            <option value="women">Women</option>
+                        </select>
+                        <div *ngIf="submitted && f.product_gender.errors" class="invalid-feedback">
+                            <div *ngIf="f.product_gender.errors.required">Gender is required</div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-gradient-primary mr-2">Submit</button>
+                    <button type="button" class="btn btn-light" [routerLink]="['/dashboard']">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
